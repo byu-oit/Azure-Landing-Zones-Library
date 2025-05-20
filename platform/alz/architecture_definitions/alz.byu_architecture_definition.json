@@ -1,0 +1,204 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Azure/Azure-Landing-Zones-Library/main/schemas/architecture_definition.json",
+  "name": "byu",
+  "management_groups": [
+    {
+      "archetypes": [
+        "BYU"
+      ],
+      "display_name": "${prefix}",
+      "exists": true,
+      "id": "${prefix_lower}",
+      "parent_id": "c6fc6e9b-51fb-48a8-b779-9ee564b40413"
+    },
+    {
+      "archetypes": [
+        "default"
+      ],
+      "display_name": "Default",
+      "exists": true,
+      "id": "student",
+      "parent_id": "c6fc6e9b-51fb-48a8-b779-9ee564b40413"
+    },
+    {
+      "archetypes": [
+        "decommissioned"
+      ],
+      "display_name": "Decommissioned",
+      "exists": true,
+      "id": "${prefix_lower}-decommissioned",
+      "parent_id": "${prefix_lower}"
+    },
+    {
+      "archetypes": [
+        "landing_zones"
+      ],
+      "display_name": "${prefix} Landing Zones",
+      "exists": true,
+      "id": "${prefix_lower}-landingzones",
+      "parent_id": "${prefix_lower}"
+    },
+    {
+      "archetypes": [
+        "dept"
+      ],
+      "display_name": "${prefix} Departments",
+      "exists": true,
+      "id": "${prefix_lower}-dept",
+      "parent_id": "${prefix_lower}-landing-zones"
+    },
+    {
+      "archetypes": [
+        "oit"
+      ],
+      "display_name": "${prefix} OIT",
+      "exists": true,
+      "id": "${prefix_lower}-oit",
+      "parent_id": "${prefix_lower}-landing-zones"
+    },
+    {
+      "archetypes": [
+        "oit"
+      ],
+      "display_name": "${prefix} AI Task Force",
+      "exists": true,
+      "id": "${prefix_lower}-ai-task-force",
+      "parent_id": "${prefix_lower}-oit"
+    },
+     {
+      "archetypes": [
+        "oit"
+      ],
+      "display_name": "${prefix} OIT ChatGPT Utilities PRD",
+      "exists": false,
+      "id": "${prefix_lower}-oit-chatgpt-utilities-prd",
+      "parent_id": "${prefix_lower}-oit"
+    },
+    {
+      "archetypes": [
+        "oit"
+      ],
+      "display_name": "${prefix} OIT Monday ServiceNow Integration",
+      "exists": true,
+      "id": "${prefix_lower}-oit-monday-servicenow-integration",
+      "parent_id": "${prefix_lower}-oit"
+    },
+     {
+      "archetypes": [
+        "oit"
+      ],
+      "display_name": "${prefix} OIT Prexa",
+      "exists": true,
+      "id": "{prefix_lower}-oit-prexa",
+      "parent_id": "${prefix_lower}-oit"
+    },
+     {
+      "archetypes": [
+        "oit"
+      ],
+      "display_name": "${prefix} OIT Teams ServiceNow",
+      "exists": true,
+      "id": "${prefix_lower}-oit-teams-snow",
+      "parent_id": "${prefix_lower}-oit"
+    },
+    {
+      "archetypes": [
+        "oit"
+      ],
+      "display_name": "${prefix} OIT Vault",
+      "exists": true,
+      "id": "${prefix_lower}-oit-vault",
+      "parent_id": "${prefix_lower}-oit"
+    },
+    {
+      "archetypes": [
+        "oit"
+      ],
+      "display_name": "CES SOC PRD",
+      "exists": true,
+      "id": "ces-soc-prd",
+      "parent_id": "${prefix_lower}-oit"
+    },
+    {
+      "archetypes": [
+        "oit"
+      ],
+      "display_name": "Granite ERP",
+      "exists": true,
+      "id": "granite-erp",
+      "parent_id": "${prefix_lower}-oit"
+    },
+    {
+      "archetypes": [
+        "oit"
+      ],
+      "display_name": "OIT-BYU",
+      "exists": true,
+      "id": "OIT",
+      "parent_id": "${prefix_lower}-oit"
+    },
+    {
+      "archetypes": [
+        "edu"
+      ],
+      "display_name": "${prefix} Education",
+      "exists": true,
+      "id": "${prefix_lower}-edu",
+      "parent_id": "${prefix_lower}-landing-zones"
+    },
+    {
+      "archetypes": [
+        "platform"
+      ],
+      "display_name": "$Platform",
+      "exists": true,
+      "id": "${prefix_lower}-platform",
+      "parent_id": "${prefix_lower}"
+    },
+    {
+      "archetypes": [
+        "sandboxs"
+      ],
+      "display_name": "Sandboxes",
+      "exists": true,
+      "id": "${prefix_lower}-sandboxes",
+      "parent_id": "${prefix_lower}"
+    },
+    {
+      "archetypes": [
+        "management"
+      ],
+      "display_name": "Management",
+      "exists": true,
+      "id": "${prefix_lower}-management",
+      "parent_id": "${prefix_lower}-platform"
+    },
+    {
+      "archetypes": [
+        "connectivity"
+      ],
+      "display_name": "Connectivity",
+      "exists": false,
+      "id": "${prefix_lower}-connectivity",
+      "parent_id": "${prefix_lower}-platform"
+    },
+    {
+      "archetypes": [
+        "identity"
+      ],
+      "display_name": "$Identity",
+      "exists": true,
+      "id": "${prefix_lower}-identity",
+      "parent_id": "${prefix_lower}-platform"
+    },
+    {
+      "archetypes": [
+        "infrastructure"
+      ],
+      "display_name": "infrastructure",
+      "exists": true,
+      "id": "${prefix_lower}-infrastructure",
+      "parent_id": "${prefix_lower}-platform"
+    }
+  ]
+}
