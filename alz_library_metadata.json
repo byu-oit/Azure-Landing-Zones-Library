@@ -1,0 +1,12 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Azure/Azure-Landing-Zones-Library/main/schemas/library_metadata.json",
+  "name": "custom",
+  "display_name": "My custom library",
+  "description": "This library contains customizations to Azure Landing Zones.",
+  "dependencies": [
+    {
+      "path": "platform/alz",
+      "ref": "2024.11.0"
+    }
+  ]
+}
